@@ -1,0 +1,13 @@
+{
+    "name": "HTML & CSS Dev Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ritwickdey.LiveServer"  // Install the Live Server extension
+        ]
+      }
+    },
+    "forwardPorts": [5500],  // Forward port 5500 (Live Server default port)
+    "postCreateCommand": "echo 'Ready to code! Open your HTML file and start the Live Server.'"
+  }
